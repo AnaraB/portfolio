@@ -1,0 +1,9 @@
+.projectImage {
+  height: 400px;
+  width: 400px;
+  background-size: cover;
+}
+
+.projectImage:hover {
+ opacity: 0.3;
+}
