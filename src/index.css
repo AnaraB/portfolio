@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+ /* general styling */
+ :root {
+  --main-color: #f8b281;
+  --secondary-color: #1b1b1b;
+}

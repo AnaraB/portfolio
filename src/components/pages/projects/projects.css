@@ -1,7 +1,9 @@
 .projectImage {
-  height: 400px;
-  width: 400px;
+  height: 250px;
+  width: 350px;
   background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat
 }
 
 .projectImage:hover {
