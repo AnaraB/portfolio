@@ -1,12 +1,12 @@
-import teamProfileGenerator from "./images/OOP_teamGenerator_demo.png";
-import myRunApp from "./images/MyRun_demo.png";
-import weatherDashboard from "./images/weather-dashboard-demo.png";
-import webApisQuiz from "./images/08-web-apis-challenge-demo.gif";
-import gazetteer from "./images/gazetteer.png";
-import companyDirectory from "./images/Company_director.png";
-import workDayScheduler from "./images/work-day-scheduler-demo.gif";
-import passwordGenerator from "./images/password-generator-demo.png"
-import portfolioBootstrap from "./images/portfolio-bootstrap.png"
+import teamProfileGenerator from "./images/portfolio-img/OOP_teamGenerator_demo.png";
+import myRunApp from "./images/portfolio-img/MyRun_demo.png";
+import weatherDashboard from "./images/portfolio-img/weather-dashboard-demo.png";
+import webApisQuiz from "./images/portfolio-img/08-web-apis-challenge-demo.gif";
+import gazetteer from "./images/portfolio-img/gazetteer.png";
+import companyDirectory from "./images/portfolio-img/Company_director.png";
+import workDayScheduler from "./images/portfolio-img/work-day-scheduler-demo.gif";
+import passwordGenerator from "./images/portfolio-img/password-generator-demo.png"
+import portfolioBootstrap from "./images/portfolio-img/portfolio-bootstrap.png"
 
 export default [
   {
@@ -81,3 +81,9 @@ export default [
     image: passwordGenerator
   }
 ];
+
+
+export const frontEndSkills  = [ "HTML", "JavaScript", "CSS", "SASS", "Bootstrap", "jQuery", "React"]
+export const backEndSkills =  ["Node", "APIs", "CSS", "MySQL", "PHP"]; 
+export const additionalSkills = ["Git", "GitHub", "Figma", "Trello", "Jira",  "XAMPP"]
+

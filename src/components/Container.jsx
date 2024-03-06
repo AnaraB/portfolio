@@ -1,13 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 
 
 
-function Container() {
+function Container(props) {
 
 
   return (
-    <div>
-      
+    <div className="container" style={props.style}>{props.children}
     </div>
   );
 }

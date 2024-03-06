@@ -1,0 +1,19 @@
+
+div.heroSection {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background-image: url("../../../assets/images/hero-bg.jpg"); 
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+div.heroSection h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+div.heroSection p {
+  font-weight: 300;
+}

@@ -9,8 +9,46 @@ html {
   overflow-x: hidden;
 }
 
- /* general styling */
- :root {
-  --main-color: #f8b281;
-  --secondary-color: #1b1b1b;
+
+.wrapper {
+  min-height: 100%;
+  padding-bottom: 100px;
+}
+
+/* NAVIGATION BAR */
+
+#mainNav {
+  border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+  background-color: #fff;
+}
+#mainNav .navbar-brand {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #f05f40;
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+}
+#mainNav .navbar-brand:focus,
+#mainNav .navbar-brand:hover {
+  color: #f05f40;
+}
+#mainNav .navbar-nav > li.nav-item,
+#mainNav .navbar-nav > li.nav-item:focus {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #212529;
+}
+#mainNav .navbar-nav > li.nav-item:hover,
+#mainNav .navbar-nav > li.nav-item:focus:hover {
+  color: #f05f40;
+}
+#mainNav .navbar-nav > li.nav-item.active,
+#mainNav .navbar-nav > li.nav-item:focus.active {
+  color: #f05f40 !important;
+  background-color: transparent;
+}
+#mainNav .navbar-nav > li.nav-item.active:hover,
+#mainNav .navbar-nav > li.nav-item:focus.active:hover {
+  background-color: transparent;
 }
