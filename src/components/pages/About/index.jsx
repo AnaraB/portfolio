@@ -4,7 +4,7 @@ import "./style.css";
 function About() {
   return (
     <div className="heroSection text-center text-white d-flex">
-      <div className="contaner my-auto">
+      <div className="contaner">
         <div className="row">
           <div className="col-lg-10 mx-auto">
             <h1>Aygerim</h1>

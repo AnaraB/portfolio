@@ -3,7 +3,7 @@ import {
   frontEndSkills,
   backEndSkills,
   additionalSkills,
-} from "../../../assets/projectData";
+} from "../../../assets/data/projectData";
 
 function Skills() {
   const frontEndList = frontEndSkills.map((skill) => <li>{skill}</li>);
