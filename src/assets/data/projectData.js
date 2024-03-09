@@ -1,12 +1,12 @@
-import teamProfileGenerator from "./images/portfolio-img/OOP_teamGenerator_demo.png";
-import myRunApp from "./images/portfolio-img/MyRun_demo.png";
-import weatherDashboard from "./images/portfolio-img/weather-dashboard-demo.png";
-import webApisQuiz from "./images/portfolio-img/08-web-apis-challenge-demo.gif";
-import gazetteer from "./images/portfolio-img/gazetteer.png";
-import companyDirectory from "./images/portfolio-img/Company_director.png";
-import workDayScheduler from "./images/portfolio-img/work-day-scheduler-demo.gif";
-import passwordGenerator from "./images/portfolio-img/password-generator-demo.png"
-import portfolioBootstrap from "./images/portfolio-img/portfolio-bootstrap.png"
+import teamGenerator from "../images/portfolio-img/teamGenerator.png";
+import myRunApp from "../images/portfolio-img/MyRun_demo.png";
+import weatherDashboard from "../images/portfolio-img/weather-dashboard-demo.png";
+import webApisQuiz from "../images/portfolio-img/web-apis-demo.gif";
+import gazetteer from "../images/portfolio-img/gazetteer.png";
+import companyDirectory from "../images/portfolio-img/Company_director.png";
+import workDayScheduler from "../images/portfolio-img/work-day-scheduler-demo.gif";
+import passwordGenerator from "../images/portfolio-img/password-generator-demo.png"
+import portfolioBootstrap from "../images/portfolio-img/portfolio-bootstrap.png"
 
 export default [
   {
@@ -21,8 +21,9 @@ export default [
     id: "1",
     title: "Team_profile_generator",
     description: "Inquirer/OOP/Jest/Bootstrap",
+    deployedUrl: "https://anarab.github.io/MyRun/",
     githubUrl: "https://github.com/AnaraB/OOP_team_profile_generator",
-    image: teamProfileGenerator,
+    image: teamGenerator,
   },
   {
     id: "2",
@@ -33,12 +34,13 @@ export default [
     image: weatherDashboard,
   },
   {
-    id: "3",
-    title: "Code quiz",
-    description: "Vanilla JS/CSS",
-    deployedUrl: "https://anarab.github.io/web-apis-quiz/",
-    githubUrl: "https://github.com/AnaraB/web-apis-quiz",
-    image: webApisQuiz,
+    id: "7",
+    title: "My portfolio project",
+    description: "HTML/JavaScript/Bootstrap",
+    deployedUrl: "https://anarab.github.io/portfolio-b/",
+    githubUrl: "https://github.com/AnaraB/portfolio-b",
+    image: portfolioBootstrap
+   
   },
   {
     id: "4",
@@ -65,12 +67,13 @@ export default [
     image: workDayScheduler,
   },
   {
-    id: "7",
-    title: "My portfolio project",
-    description: "HTML/JavaScript/Bootstrap",
-    deployedUrl: "https://anarab.github.io/portfolio-b/",
-    githubUrl: "https://github.com/AnaraB/portfolio-b",
-    image: portfolioBootstrap
+    id: "3",
+    title: "Code quiz",
+    description: "Vanilla JS/CSS",
+    deployedUrl: "https://anarab.github.io/web-apis-quiz/",
+    githubUrl: "https://github.com/AnaraB/web-apis-quiz",
+    image: webApisQuiz,
+   
   },
   {
     id: "8",
