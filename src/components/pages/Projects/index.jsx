@@ -7,8 +7,8 @@ function Projects() {
   return (
     <section className="projects-section">
     <div className="container-fluid">
-      <h1>My Projects</h1>
-      <div className="row no-gutters">
+      <h1>Projects</h1>
+      <div className="row">
       {projectData.map((project) => {
         return <ProjectItem projectInfo={project} key={project.id}/>;
       })}
