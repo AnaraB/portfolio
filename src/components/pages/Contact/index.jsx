@@ -1,14 +1,29 @@
 import React from 'react';
+import Container from '../../Container';
 
 function Contact() {
 
+    const icons = [
+        {
+            name: "fab fa-github",
+            link: "https://github.com/AnaraB"
+        },
+        {
+            name: "fab fa-linkedin",
+            link: "https://www.linkedin.com/in/aygerim-berdalieva/"
+        },
+        {
+            name: "fa-regular fa-file",
+            link: "https://www.linkedin.com/in/aygerim-berdalieva/"
+        }
+    ]
     return (
-        <section className="bg-dark">
+        <Container>
+        <section className="contactSection">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-10 mx-auto text-white mb-4">
-                    <h1 className="text-center">Contact</h1>
-                        <hr className="light my-4" />
+                    <div className="col-lg-10 mx-auto mb-4">
+                    <h2 className="text-center">Contact</h2>
                         <form id="contact-form" className="mb-5">
                             <div>
                                 <label htmlFor="name">Name:</label>
@@ -42,15 +57,23 @@ function Contact() {
                             <button type="submit" className="btn btn-primary btn-xl js-scroll-trigger">Submit</button>
                             </div>
                         </form>
-                    
-                        <h4>
-                            Aygerim Berdalieva <br />
-                            My email <a href="mailto:berdali.aygerim9@gmail.com"> berdali.aygerim9@gmail.com</a>
-                        </h4>
                     </div>
                 </div>
+                <div className="row">
+                    <div className="col-lg-8 mx-auto d-flex justify-content-between contactMeIcons">
+                        {icons.map(icon =>
+                            (
+                                <a href={icon.link} key={icon.name} target="_blank" rel="noopener noreferrer"><i className={icon.name}></i></a>
+                            )
+                        )}
+                    </div>
+                         {/* <p className="text-center">
+       Download my <a href={Pdf} className="text-faded white-link" download>CV</a>
+       </p> */}
+            </div>
             </div>
         </section>
+        </Container>
     );
 }
 

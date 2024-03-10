@@ -1,81 +1,49 @@
+/* general reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html {
-  font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
+body {
+  /* overflow-x: hidden;
+  overflow-y: hidden; */
 }
-
-
-
-.wrapper {
-  min-height: 100%;
-  padding-bottom: 100px;
+h2 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 /* NAVIGATION BAR */
 
 #mainNav {
-  border-bottom: 1px solid rgba(33, 37, 41, 0.1);
-  background-color: #fff;
+  padding: 1rem 5rem 0;
 }
-#mainNav .navbar-brand {
-  font-weight: 700;
-  text-transform: uppercase;
-  color: orangered;
-  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+
+.logo {
+  width: 10rem;
+  padding-left: 1rem;
 }
-#mainNav .navbar-brand:focus,
-#mainNav .navbar-brand:hover {
-  color: #e60404;
-}
-#mainNav .navbar-nav > li.nav-item,
-#mainNav .navbar-nav > li.nav-item:focus {
-  font-size: 0.9rem;
-  font-weight: 700;
+#mainNav {
+  font-size: 1.1rem;
+  font-weight: 800;
   text-transform: uppercase;
   cursor: pointer;
-  color: #0a79e8;
-}
-#mainNav .navbar-nav > li.nav-item:hover,
-#mainNav .navbar-nav > li.nav-item:focus:hover {
-  color: #f05f40;
-}
-#mainNav .navbar-nav > li.nav-item.active,
-#mainNav .navbar-nav > li.nav-item:focus.active {
-  color: #f05f40 !important;
-  background-color: transparent;
-}
-#mainNav .navbar-nav > li.nav-item.active:hover,
-#mainNav .navbar-nav > li.nav-item:focus.active:hover {
-  background-color: transparent;
+  color: white;
 }
 
 /* Projects  */
-.projects-section {
-  margin-top: 5rem;
-}
-.projects-section h1{
-  text-align: center;
-  margin-bottom: 2rem;
-}
 
-.project-card{
+.project-card {
   position: relative;
   display: block;
-  max-width: 650px;
-  margin: 0 auto;
- 
-
+  /* max-width: 60rem; */
+  margin: 0.8rem;
 }
 
-
-.project-card-caption{
-  background-color: #f05f40;
-  position:absolute;
+.project-card-caption {
+  position: absolute;
   bottom: 0;
   display: block;
   width: 100%;
@@ -83,14 +51,12 @@ html {
   text-align: center;
   opacity: 0;
   background: rgba(246, 245, 243, 0.9);
-  /* -webkit-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
-  transition: all 0.2s; */
-
-  
+  transition: all 0.2s;
 }
 
-.project-card-caption-content{
+.project-card-caption-content {
   position: absolute;
   top: 30%;
   width: 100%;
@@ -98,30 +64,58 @@ html {
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
- 
-
 }
 
-.project-card:hover .project-card-caption{
+.project-card:hover .project-card-caption {
   opacity: 1;
 }
 .project-card-caption-content {
   line-height: 2rem;
-
-
 }
 .project-card-caption-content a:hover {
-
-  color: #f16926dd;
   text-decoration: none;
 }
 .project-card-caption-content i.fab {
-
-  font-size: 2rem;
-  color: rgb(12, 96, 4);
+  font-size: 2.2rem;
+  color: #f16926dd;
 }
 .project-card-caption-content i.fas {
   padding-top: 0.8rem;
-  font-size: 1.5rem;
-  color: rgb(24, 195, 8);
+  font-size: 1.8rem;
+  color: #f16926dd;
+}
+
+/* Skills section */
+.skillsSection,
+.contactSection,
+.projectsSection {
+  padding-top: 10rem;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(88, 88, 195, 0.965),
+    rgba(30, 34, 34, 0.3)
+  );
+  height: 100%;
+  width: 100%;
+  /* color:white; */
+  text-align: center;
+  padding-bottom: 8rem;
+}
+.listInlne {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  padding: 1.2rem;
+  font-size: 1.4rem;
+}
+
+/* contact  */
+.contactMeIcons i{
+  padding: 4rem 0;
+  margin: 2rem;
+  text-decoration: none;
+  color:  #e67e22;
+  font-size: 3rem;
+
 }

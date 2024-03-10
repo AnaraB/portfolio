@@ -1,32 +1,32 @@
 import React from "react";
 import "./style.css";
+import { Link } from "react-router-dom";
 
 function About() {
   return (
-    <div className="heroSection text-center text-white d-flex">
-      <div className="contaner">
+    <div className="text-center d-flex" id="heroSection">
+      <div className="container-fluid hero-container">
         <div className="row">
           <div className="col-lg-10 mx-auto">
-            <h1>Aygerim</h1>
-            <p>Junior Web Developer</p>
+            <div className="circle-img"></div>
+            <h3>Aygerim Berdalieva</h3>
             <p>
-              Hey there! I'm a front-end web developer who's all about creating
-              user-friendly online experiences. I started out in customer
-              service, but I've since graduated from the Junior Full Stack
-              Developer program at IT Career Switch. Right now, I'm leveling up
-              my coding skills at Skills Bootcamp's Front-End Web Development
-              course on edX Boot Camp. <br />I love tackling problems and coming
-              up with cool new apps, especially ones that prioritize mobile
-              users. By combining my past experiences with my ongoing education,
-              I'm ready to dive into a role where I can bring fresh ideas to the
-              table and make a real impact in the tech world. <br />
-              With a solid background in business management and web
-              development, I'm ready to take on any challenge and thrive in a
-              fast-paced, always-changing environment. Let's build something
-              awesome together!
+              Hey, I'm a Junior Web Developer who loves creating user-friendly web
+              applications. <br />
+              For me, the journey of becoming a web developer is like climbing the mountains. After
+              climbing a great hill, one only finds that there are many more
+              hills to climb. I love tackling problems and coming up with cool
+              new ideas and creating apps that prioritize mobile users. By
+              combining my transferrable skills from my past experiences with my
+              ongoing education, I'm ready to take on any challenge and thrive
+              in a fast-paced, always-changing tech environment. <br /> Let's build
+              something awesome together!
             </p>
           </div>
         </div>
+        <Link to="/contact" className="orangeBtn">
+          Contact me
+        </Link>
       </div>
     </div>
   );
