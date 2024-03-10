@@ -18,7 +18,7 @@ return (
 <Router>
     <div>
       <Nav />
-      <Container className="wrapper">
+   
         <Routes>
           <Route path="/" element={<About/>} />
           <Route path="/about" element={<About/>} />
@@ -26,7 +26,7 @@ return (
           <Route path="/skills" element={<Skills/>} />
           <Route path="/contact" element={<Contact/>} />
         </Routes>
-      </Container>
+ 
       <Footer />
     </div>
   </Router>

@@ -1,13 +1,16 @@
 import React from "react"
-import { Link, NavLink } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
+import logo from "../assets/images/logo.png";
 
 function Nav() {
   return (
-
     <nav
     className="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div className="container-fluid">
-      <Link className="navbar-brand" to="/">Aygerim</Link>
+     <div>
+      <img src={logo} className="logo" alt="" />
+   
+     </div>
       <button
         className="navbar-toggler"
         type="button"

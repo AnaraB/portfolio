@@ -1,10 +1,12 @@
 import React from "react";
 import projectData from "../../../assets/data/projectData";
 import ProjectItem from "../../ProjectItem";
+import Container from "../../Container";
 
 
 function Projects() {
   return (
+    <Container>
     <section className="projects-section">
     <div className="container-fluid">
       <h1>Projects</h1>
@@ -17,6 +19,7 @@ function Projects() {
      
     </div>
     </section>
+    </Container>
   );
 }
 

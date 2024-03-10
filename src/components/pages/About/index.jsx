@@ -3,12 +3,12 @@ import "./style.css";
 
 function About() {
   return (
-    <div className="heroSection text-center text-white d-flex">
-      <div className="contaner">
+    <div className="text-center d-flex" id="heroSection">
+      <div className="container-fluid">
         <div className="row">
           <div className="col-lg-10 mx-auto">
-            <h1>Aygerim</h1>
-            <p>Junior Web Developer</p>
+          <div className="circle-img"></div>
+            <h4>Junior Web Developer</h4>
             <p>
               Hey there! I'm a front-end web developer who's all about creating
               user-friendly online experiences. I started out in customer

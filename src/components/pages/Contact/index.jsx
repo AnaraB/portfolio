@@ -1,8 +1,10 @@
 import React from 'react';
+import Container from '../../Container';
 
 function Contact() {
 
     return (
+        <Container>
         <section className="bg-dark">
             <div className="container">
                 <div className="row">
@@ -51,6 +53,7 @@ function Contact() {
                 </div>
             </div>
         </section>
+        </Container>
     );
 }
 

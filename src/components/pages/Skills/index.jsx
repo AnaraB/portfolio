@@ -4,13 +4,16 @@ import {
   backEndSkills,
   additionalSkills,
 } from "../../../assets/data/projectData";
+import Container from "../../Container";
 
 function Skills() {
+  
   const frontEndList = frontEndSkills.map((skill) => <li>{skill}</li>);
   const backEndList = backEndSkills.map((skill) => <li>{skill}</li>);
   const otherProficiencies = additionalSkills.map((skill) => <li>{skill}</li>);
 
   return (
+    <Container>
     <section className="bg-dark">
       <div className="container">
         <div className="row">
@@ -30,6 +33,7 @@ function Skills() {
         </div>
       </div>
     </section>
+    </Container>
   );
 }
 
