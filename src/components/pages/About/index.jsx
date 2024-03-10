@@ -13,7 +13,7 @@ function About() {
             <p>
               Hey, I'm a Junior Web Developer who loves creating user-friendly web
               applications. <br />
-              Becoming a web developer is like climbing the mountains. After
+              For me, the journey of becoming a web developer is like climbing the mountains. After
               climbing a great hill, one only finds that there are many more
               hills to climb. I love tackling problems and coming up with cool
               new ideas and creating apps that prioritize mobile users. By

@@ -11,16 +11,19 @@ function Contact() {
         {
             name: "fab fa-linkedin",
             link: "https://www.linkedin.com/in/aygerim-berdalieva/"
+        },
+        {
+            name: "fa-regular fa-file",
+            link: "https://www.linkedin.com/in/aygerim-berdalieva/"
         }
     ]
-
     return (
         <Container>
-        <section className="">
+        <section className="contactSection">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-10 mx-auto mb-4">
-                    <h1 className="text-center">Contact</h1>
+                    <h2 className="text-center">Contact</h2>
                         <form id="contact-form" className="mb-5">
                             <div>
                                 <label htmlFor="name">Name:</label>
@@ -54,19 +57,19 @@ function Contact() {
                             <button type="submit" className="btn btn-primary btn-xl js-scroll-trigger">Submit</button>
                             </div>
                         </form>
-                    
-                        
-                            <p>My email<a href="mailto:berdali.aygerim9@gmail.com"> berdali.aygerim9@gmail.com</a></p>
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-lg-8 mx-auto">
+                    <div className="col-lg-8 mx-auto d-flex justify-content-between contactMeIcons">
                         {icons.map(icon =>
                             (
                                 <a href={icon.link} key={icon.name} target="_blank" rel="noopener noreferrer"><i className={icon.name}></i></a>
                             )
                         )}
                     </div>
+                         {/* <p className="text-center">
+       Download my <a href={Pdf} className="text-faded white-link" download>CV</a>
+       </p> */}
             </div>
             </div>
         </section>

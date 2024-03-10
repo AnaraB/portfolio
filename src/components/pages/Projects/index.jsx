@@ -7,9 +7,9 @@ import Container from "../../Container";
 function Projects() {
   return (
     <Container>
-    <section className="projects-section">
+    <section className="projectsSection">
     <div className="container-fluid">
-      <h1>Projects</h1>
+      <h2>Projects</h2>
       <div className="row">
       {projectData.map((project) => {
         return <ProjectItem projectInfo={project} key={project.id}/>;

@@ -16,19 +16,16 @@
   height: 100vh;
   min-width: 100vh;
   color: #fff;
-  
 }
 
-.hero-container{
+.hero-container {
   position: relative;
-
 }
 
 #heroSection h3 {
   font-size: 1.9rem;
   /* font-weight: 300; */
-  margin-bottom: 10rem;
- 
+  margin-bottom: 9rem;
 }
 #heroSection p {
   font-size: 1.1rem;
@@ -44,15 +41,15 @@
   background-position: center;
   border-radius: 50%;
   border: 5px solid #fff;
-  width: 8rem;
-  height: 8rem;
+  width: 7rem;
+  height: 7rem;
   position: absolute;
-  left:50%;
-  top:10%;
-transform: translate(-50%, -10%);
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, -10%);
 }
 
-.orangeBtn:link, 
+.orangeBtn:link,
 .orangeBtn:visited {
   font-size: 1rem;
   font-weight: 500;
@@ -61,6 +58,5 @@ transform: translate(-50%, -10%);
   text-decoration: none;
   display: inline-block;
   padding: 0.4rem 1rem;
-border-radius: 0.8rem;
-
+  border-radius: 0.8rem;
 }
