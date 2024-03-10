@@ -1,5 +1,5 @@
 import React from "react"
-import {  NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 
 function Nav() {
@@ -8,8 +8,7 @@ function Nav() {
     className="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div className="container-fluid">
      <div>
-      <img src={logo} className="logo" alt="" />
-   
+      <img src={logo} className="logo" alt="logo image" />
      </div>
       <button
         className="navbar-toggler"
@@ -22,7 +21,7 @@ function Nav() {
       >
         <span className="navbar-toggler-icon"></span>
       </button>
-      <div className="collapse navbar-collapse" id="navbarNav">
+      <div className="collapse navbar-collapse  justify-content-end" id="navbarNav">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
           <NavLink

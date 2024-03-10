@@ -6,7 +6,7 @@ import {
 } from "../../../assets/data/projectData";
 import Container from "../../Container";
 
-function Skills() {
+function Skills(props) {
   
   const frontEndList = frontEndSkills.map((skill) => <li>{skill}</li>);
   const backEndList = backEndSkills.map((skill) => <li>{skill}</li>);
@@ -14,12 +14,15 @@ function Skills() {
 
   return (
     <Container>
-    <section className="bg-dark">
+    <section className="skillsSection">
       <div className="container">
         <div className="row">
-          <div className="col-lg-10 mx-auto text-white mb-4">
-            <h1 className="text-center">Curriculum Vitae</h1>
-            <hr className="light my-4" />
+          <div className="col-lg-10 mx-auto mb-4">
+            <p>I started out in customer
+              service, but I've since graduated from the Junior Full Stack
+              Developer program at IT Career Switch. Right now, I'm leveling up
+              my coding skills at Skills Bootcamp's Front-End Web Development
+              course on edX Boot Camp. </p>
             <h3 className="text-center">Front end skills</h3>
             <ul>{frontEndList}</ul>
             <h3 className="text-center">Back end skills</h3>

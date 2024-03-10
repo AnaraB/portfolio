@@ -1,5 +1,4 @@
-
-
+/* general reset */
 * {
   margin: 0;
   padding: 0;
@@ -10,31 +9,31 @@ body {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
-.wrapper {
+/* .wrapper {
   min-height: 100%;
   padding-bottom: 100px;
-}
+} */
 
 /* NAVIGATION BAR */
 
-#mainNav .navbar-brand {
-  font-weight: 700;
+#mainNav {
+  padding-top: 1rem;;
+}
+
+.logo {
+  width: 10rem;
+  padding-left: 1rem;;
   
-/*  
-  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; */
 }
-#mainNav .navbar-brand:focus,
-#mainNav .navbar-brand:hover {
-  color: #e60404;
-}
-#mainNav .navbar-nav > li.nav-item,
-#mainNav .navbar-nav > li.nav-item:focus {
-  font-size: 0.9rem;
-  font-weight: 700;
+#mainNav{
+  font-size: 1.1rem;
+  font-weight: 800;
   text-transform: uppercase;
   cursor: pointer;
-  color: #0a79e8;
+  color: white;
 }
+
+
 
 /* Projects  */
 .projects-section {
@@ -48,12 +47,12 @@ body {
 .project-card {
   position: relative;
   display: block;
-  max-width: 650px;
+  /* max-width: 60rem; */
   margin: 0 auto;
 }
 
 .project-card-caption {
-  background-color: #f05f40;
+  /* background-color: #f05f40; */
   position: absolute;
   bottom: 0;
   display: block;
@@ -84,15 +83,24 @@ body {
   line-height: 2rem;
 }
 .project-card-caption-content a:hover {
-  color: #f16926dd;
+
   text-decoration: none;
 }
 .project-card-caption-content i.fab {
-  font-size: 2rem;
-  color: rgb(12, 96, 4);
+  font-size: 2.2rem;
+  color: #f16926dd;
 }
 .project-card-caption-content i.fas {
   padding-top: 0.8rem;
-  font-size: 1.5rem;
-  color: rgb(24, 195, 8);
+  font-size: 1.8rem;
+  color: #f16926dd;
 }
+
+
+/* Skills section */
+.skillsSection {
+  padding-top: 10rem;
+}
+
+
+
