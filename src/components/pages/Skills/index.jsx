@@ -1,4 +1,5 @@
 import React from "react";
+import { v4 as uuid} from 'uuid';
 import {
   frontEndSkills,
   backEndSkills,
@@ -8,9 +9,9 @@ import {
 import Container from "../../Container";
 
 function Skills() {
-  const frontEndList = frontEndSkills.map((skill) => <li>{skill}</li>);
-  const backEndList = backEndSkills.map((skill) => <li>{skill}</li>);
-  const otherProficiencies = additionalSkills.map((skill) => <li>{skill}</li>);
+  const frontEndList = frontEndSkills.map((skill) => <li key={uuid()}>{skill}</li>);
+  const backEndList = backEndSkills.map((skill) => <li key={uuid()}>{skill}</li>);
+  const otherProficiencies = additionalSkills.map((skill) => <li key={uuid()}>{skill}</li>);
 
   return (
     <Container>

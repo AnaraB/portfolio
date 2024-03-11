@@ -67,6 +67,7 @@ function Contact() {
                     className="form-control"
                     placeholder="Message"
                     value={formData.message}
+                    type="text"
                     id="message"
                     name="message"
                     onChange={handleChange}
