@@ -19,7 +19,7 @@ function Skills() {
         <div className="container">
           <div className="row">
             <div className="col-lg-10 mx-auto mb-4">
-              <h2>Skills</h2>
+              <h2 sectionTitle>Skills</h2>
               <p>
                 I started out in customer service, but I've since graduated from
                 the Junior Full Stack Developer program at IT Career Switch.
@@ -43,7 +43,7 @@ function Skills() {
             </div>
           </div>
           <div className="row">
-                    <div className="col-lg-8 mx-auto d-flex justify-content-between contactMeIcons">
+                    <div className="col-lg-8 mx-auto d-flex justify-content-between socialIcons">
                         {icons.map(icon =>
                             (
                                 <a href={icon.link} key={icon.name} target="_blank" rel="noopener noreferrer"><i className={icon.name}></i></a>

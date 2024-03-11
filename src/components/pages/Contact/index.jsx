@@ -1,84 +1,84 @@
 import React from "react";
-import { useState } from "react";
+// import { useState } from "react";
+import { useForm } from "react-hook-form";
 import Container from "../../Container";
 
 function Contact() {
-    //set all input fields in html form with NAME attr that equals
-    // the obj key in useState. That's how useState knows to track from input fields
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
 
-  const handleChange = (event) => {
-    const changeField = event.target.name;
-    const newValue = event.target.value;
-    //    update state by using updater syntax
-    setFormData((currentData) => {
-        //use computed property name
-      //use spread operator and return  copy of currentData obj
-      //update changeFiled with new value
-      return { ...currentData, [changeField]: newValue };
-      //alternative way 
-      //return {...currentData, [event.target.name]: event.target.value}
-    });
+  const {
+    register, 
+    handleSubmit,
+    formState: { errors},
+  } = useForm({mode: "onChange"});
+  const handleRegistration = (formData) => {
+    console.log("Form submitted")
+  }
+
+  
+
+  const handleError = (errors) => {
+    console.log(errors);
   };
+ 
+  const registerOptions = {
+    name: {required: "Please enter you name"},
+    email: {required: "Please enter your email"},
+    message: { required: "Please leave your message"}
 
-  const handleSubmit = () => {
-    console.log(formData);
-  };
-
+  }
+ 
   return (
     <Container>
       <section className="contactSection">
         <div className="container">
           <div className="row">
             <div className="col-lg-10 mx-auto mb-4">
-              <h2 className="text-center">Contact</h2>
-              <form id="contact-form" className="mb-5">
+              <h2 className="sectionTitle">Contact Form</h2>
+              <form id="contact-form" onSubmit={handleSubmit(handleRegistration, handleError)} className="">
                 <div>
-                  <label htmlFor="name">Name:</label>
+              
                   <input
-                    className="form-control"
+                    className="form-control my-4"
                     placeholder="Name"
                     type="text"
                     name="name"
-                    value={formData.name}
-                    id="name"
-                    onChange={handleChange}
+                    {...register("name", registerOptions.name)}
                   />
+                  <small className="text-warning">
+                    {errors?.name && errors.name.message}
+                  </small>
                 </div>
                 <div>
-                  <label htmlFor="email">Email address:</label>
                   <input
-                    className="form-control"
+                    className="form-control my-4"
                     placeholder="Email"
                     type="email"
-                    value={formData.email}
-                    id="email"
                     name="email"
-                    onChange={handleChange}
+                    {...register("email", registerOptions.email)}
                   />
+                   <small className="text-warning">
+                    {errors?.email&& errors.email.message}
+                  </small>
                 </div>
                 <div>
-                  <label htmlFor="message">Message:</label>
+             
                   <textarea
-                    className="form-control"
+                    className="form-control my-4"
                     placeholder="Message"
-                    value={formData.message}
                     type="text"
-                    id="message"
-                    name="message"
-                    onChange={handleChange}
+                    name="message" 
                     rows="5"
+                    {...register("message", registerOptions.message)}
                   />
+                   <small className="text-warning">
+                    {errors?.message && errors.message.message}
+                  </small>
                 </div>
                 <div className="text-center">
                   <button
                     type="submit"
                     onClick={handleSubmit}
-                    className="btn btn-primary btn-xl js-scroll-trigger"
+                    className="btn-contact-me"
                   >
                     Submit
                   </button>
