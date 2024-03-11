@@ -1,22 +1,28 @@
 import React from 'react';
+import {useState} from 'react';
 import Container from '../../Container';
 
 function Contact() {
+    const [username, setUsername] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
 
-    const icons = [
-        {
-            name: "fab fa-github",
-            link: "https://github.com/AnaraB"
-        },
-        {
-            name: "fab fa-linkedin",
-            link: "https://www.linkedin.com/in/aygerim-berdalieva/"
-        },
-        {
-            name: "fa-regular fa-file",
-            link: "https://www.linkedin.com/in/aygerim-berdalieva/"
-        }
-    ]
+    const updateUsername = (event) =>{
+        console.log(event.target.value);
+        setUsername(event.target.value);
+    }
+    const updateEmail = (event) =>{
+        console.log(event.target.value);
+        setUsername(event.target.value);
+    }
+    const updateMessage = (event) =>{
+        console.log(event.target.value);
+        setUsername(event.target.value);
+    }
+
+
+
+   
     return (
         <Container>
         <section className="contactSection">
@@ -31,7 +37,9 @@ function Contact() {
                                     className="form-control"
                                     placeholder="Name"
                                     type="text"
-                                    name="name"
+                                    value={username}
+                                    id="username"
+                                    onChange={updateUsername}
                                 />
                             </div>
                             <div>
@@ -40,7 +48,9 @@ function Contact() {
                                     className="form-control"
                                     placeholder="Email"
                                     type="email"
-                                    name="email"
+                                    value={email}
+                                    id="email"
+                                    onChange={updateEmail}
                           
                                 />
                             </div>
@@ -49,7 +59,9 @@ function Contact() {
                                 <textarea
                                     className="form-control"
                                     placeholder="Message"
-                                    name="message"
+                                    value={message}
+                                    id="message"
+                                    onChange={updateMessage}
                                     rows="5" 
                                 />
                             </div>
@@ -59,18 +71,7 @@ function Contact() {
                         </form>
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col-lg-8 mx-auto d-flex justify-content-between contactMeIcons">
-                        {icons.map(icon =>
-                            (
-                                <a href={icon.link} key={icon.name} target="_blank" rel="noopener noreferrer"><i className={icon.name}></i></a>
-                            )
-                        )}
-                    </div>
-                         {/* <p className="text-center">
-       Download my <a href={Pdf} className="text-faded white-link" download>CV</a>
-       </p> */}
-            </div>
+               
             </div>
         </section>
         </Container>

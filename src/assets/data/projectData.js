@@ -6,7 +6,6 @@ import gazetteer from "../images/portfolio-img/gazetteer.png";
 import companyDirectory from "../images/portfolio-img/Company_director.png";
 import workDayScheduler from "../images/portfolio-img/work-day-scheduler-demo.gif";
 import passwordGenerator from "../images/portfolio-img/password-generator-demo.png"
-import portfolioBootstrap from "../images/portfolio-img/portfolio-bootstrap.png"
 import anarkaGB from "../images/portfolio-img/anarkaGB.png";
 
 export default [
@@ -89,6 +88,20 @@ export default [
   }
 ];
 
+export const  icons =[
+  {
+      name: "fab fa-github",
+      link: "https://github.com/AnaraB"
+  },
+  {
+      name: "fab fa-linkedin",
+      link: "https://www.linkedin.com/in/aygerim-berdalieva/"
+  },
+  {
+      name: "fa-regular fa-file",
+      link: "https://www.linkedin.com/in/aygerim-berdalieva/"
+  }
+]
 
 export const frontEndSkills  = [ "HTML", "JavaScript", "CSS", "SASS", "Bootstrap", "jQuery", "React"]
 export const backEndSkills =  ["Node", "APIs", "CSS", "MySQL", "PHP"]; 

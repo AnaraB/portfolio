@@ -2,7 +2,8 @@ import React from "react";
 import {
   frontEndSkills,
   backEndSkills,
-  additionalSkills,
+  additionalSkills, 
+  icons
 } from "../../../assets/data/projectData";
 import Container from "../../Container";
 
@@ -40,6 +41,18 @@ function Skills() {
               <ul className="listInlne">{otherProficiencies}</ul>
             </div>
           </div>
+          <div className="row">
+                    <div className="col-lg-8 mx-auto d-flex justify-content-between contactMeIcons">
+                        {icons.map(icon =>
+                            (
+                                <a href={icon.link} key={icon.name} target="_blank" rel="noopener noreferrer"><i className={icon.name}></i></a>
+                            )
+                        )}
+                    </div>
+                         {/* <p className="text-center">
+       Download my <a href={Pdf} className="text-faded white-link" download>CV</a>
+       </p> */}
+            </div>
         </div>
       </section>
     </Container>
