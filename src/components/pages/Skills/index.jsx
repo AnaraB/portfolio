@@ -1,15 +1,17 @@
 import React from "react";
+import { v4 as uuid} from 'uuid';
 import {
   frontEndSkills,
   backEndSkills,
-  additionalSkills,
+  additionalSkills, 
+  icons
 } from "../../../assets/data/projectData";
 import Container from "../../Container";
 
 function Skills() {
-  const frontEndList = frontEndSkills.map((skill) => <li>{skill}</li>);
-  const backEndList = backEndSkills.map((skill) => <li>{skill}</li>);
-  const otherProficiencies = additionalSkills.map((skill) => <li>{skill}</li>);
+  const frontEndList = frontEndSkills.map((skill) => <li key={uuid()}>{skill}</li>);
+  const backEndList = backEndSkills.map((skill) => <li key={uuid()}>{skill}</li>);
+  const otherProficiencies = additionalSkills.map((skill) => <li key={uuid()}>{skill}</li>);
 
   return (
     <Container>
@@ -17,7 +19,7 @@ function Skills() {
         <div className="container">
           <div className="row">
             <div className="col-lg-10 mx-auto mb-4">
-              <h2>Skills</h2>
+              <h2 sectionTitle>Skills</h2>
               <p>
                 I started out in customer service, but I've since graduated from
                 the Junior Full Stack Developer program at IT Career Switch.
@@ -40,6 +42,18 @@ function Skills() {
               <ul className="listInlne">{otherProficiencies}</ul>
             </div>
           </div>
+          <div className="row">
+                    <div className="col-lg-8 mx-auto d-flex justify-content-between socialIcons">
+                        {icons.map(icon =>
+                            (
+                                <a href={icon.link} key={icon.name} target="_blank" rel="noopener noreferrer"><i className={icon.name}></i></a>
+                            )
+                        )}
+                    </div>
+                         {/* <p className="text-center">
+       Download my <a href={Pdf} className="text-faded white-link" download>CV</a>
+       </p> */}
+            </div>
         </div>
       </section>
     </Container>
