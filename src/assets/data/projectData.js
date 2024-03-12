@@ -8,6 +8,7 @@ import workDayScheduler from "../images/portfolio-img/work-day-scheduler-demo.gi
 import passwordGenerator from "../images/portfolio-img/password-generator-demo.png"
 import anarkaGB from "../images/portfolio-img/anarkaGB.png";
 
+
 export default [
   {
     id: "0",
@@ -88,22 +89,10 @@ export default [
   }
 ];
 
-export const  icons =[
-  {
-      name: "fab fa-github",
-      link: "https://github.com/AnaraB"
-  },
-  {
-      name: "fab fa-linkedin",
-      link: "https://www.linkedin.com/in/aygerim-berdalieva/"
-  },
-  {
-      name: "fa-regular fa-file",
-      link: "https://www.linkedin.com/in/aygerim-berdalieva/"
-  }
-]
 
-export const frontEndSkills  = [ "HTML", "JavaScript", "CSS", "SASS", "Bootstrap", "jQuery", "React"]
-export const backEndSkills =  ["Node", "APIs", "CSS", "MySQL", "PHP"]; 
-export const additionalSkills = ["Git", "GitHub", "Figma", "Trello", "Jira",  "XAMPP"]
+
+export const codingLanguages = [ "HTML", "JavaScript", "CSS",  "PHP"]
+export const librariesAndFrameworks =  ["Bootstrap", "jQuery", "React"]; 
+export const  additionalSkills = ["MySQL", "API", "Node",  "XAMPP", "Git",  "Figma"]
+export const collaborationTools = ["GitHub", "Trello", "Jira"]
 
