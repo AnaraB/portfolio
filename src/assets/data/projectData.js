@@ -8,11 +8,12 @@ import workDayScheduler from "../images/portfolio-img/work-day-scheduler-demo.gi
 import passwordGenerator from "../images/portfolio-img/password-generator-demo.png"
 import anarkaGB from "../images/portfolio-img/anarkaGB.png";
 
+
 export default [
   {
     id: "0",
     title: "MyRun",
-    description: "JS/jQuery/CSS/APIs",
+    description: "JS / jQuery / CSS / APIs",
     deployedUrl: "https://anarab.github.io/MyRun/",
     githubUrl: "https://github.com/AnaraB/MyRun",
     image: myRunApp,
@@ -20,7 +21,7 @@ export default [
   {
     id: "1",
     title: "Team_profile_generator",
-    description: "JS/Inquirer/OOP/Jest/Bootstrap",
+    description: "JS / Inquirer / OOP / Jest / ootstrap",
     deployedUrl: "https://anarab.github.io/MyRun/",
     githubUrl: "https://github.com/AnaraB/OOP_team_profile_generator",
     image: teamGenerator,
@@ -28,7 +29,7 @@ export default [
   {
     id: "2",
     title: "Weather-dashboard",
-    description:"JS/jQuery/API/Bootstrap",
+    description:"JS / jQuery / API / Bootstrap",
     deployedUrl: "https://anarab.github.io/weather-dashboard/",
     githubRepo: "https://github.com/AnaraB/weather-dashboard",
     image: weatherDashboard,
@@ -36,7 +37,7 @@ export default [
   {
     id: "3",
     title: "Gazetteer",
-    description: "JS/APIs/JQuery/CSS/AJAX/PHP",
+    description: "JS / APIs / JQuery / CSS / AJAX / PHP",
     deployedUrl: "https://gazetteer.anara-berdalieva.co.uk/",
     githubRepo: "https://github.com/AnaraB/gazetteer",
     image: gazetteer,
@@ -45,7 +46,7 @@ export default [
   {
     id: "4",
     title: "Anarkas Goodness Bites",
-    description: "HTML/CSS",
+    description: "HTML / CSS",
     deployedUrl: "https://anarab.github.io/anarkasGB/",
     githubUrl: "https://github.com/AnaraB/anarkasGB",
     image: anarkaGB
@@ -54,7 +55,7 @@ export default [
   {
     id: "5",
     title: "Company Directory",
-    description: "JS/Bootstrap/PHP/SQL",
+    description: "JS / Bootstrap / PHP / SQL",
     deployedUrl: "https://companydirectory.anara-berdalieva.co.uk/",
     githubUrl: "https://github.com/AnaraB/companydirectory",
     image: companyDirectory,
@@ -62,7 +63,7 @@ export default [
   {
     id: "6",
     title: "Password Generator",
-    description: "HTML/Vanilla JS/CSS",
+    description: "HTML / Vanilla JS / CSS",
     deployedUrl: "https://anarab.github.io/password-generator/",
     githubUrl: "https://github.com/AnaraB/password-generator",
     image: passwordGenerator
@@ -71,7 +72,7 @@ export default [
   {
     id: "7",
     title: "Code quiz",
-    description: "Vanilla JS/CSS",
+    description: "Vanilla JS / CSS",
     deployedUrl: "https://anarab.github.io/web-apis-quiz/",
     githubUrl: "https://github.com/AnaraB/web-apis-quiz",
     image: webApisQuiz,
@@ -80,7 +81,7 @@ export default [
   {
     id: "8",
     title: "Work day planner",
-    description: "HTML/JS/jQuery/Bootstrap",
+    description: "HTML / JS / jQuery / Bootstrap",
     deployedUrl: "https://anarab.github.io/Work-day-scheduler/",
     githubRepo: "https://github.com/AnaraB/Work-day-scheduler",
     image: workDayScheduler,
@@ -88,22 +89,10 @@ export default [
   }
 ];
 
-export const  icons =[
-  {
-      name: "fab fa-github",
-      link: "https://github.com/AnaraB"
-  },
-  {
-      name: "fab fa-linkedin",
-      link: "https://www.linkedin.com/in/aygerim-berdalieva/"
-  },
-  {
-      name: "fa-regular fa-file",
-      link: "https://www.linkedin.com/in/aygerim-berdalieva/"
-  }
-]
 
-export const frontEndSkills  = [ "HTML", "JavaScript", "CSS", "SASS", "Bootstrap", "jQuery", "React"]
-export const backEndSkills =  ["Node", "APIs", "CSS", "MySQL", "PHP"]; 
-export const additionalSkills = ["Git", "GitHub", "Figma", "Trello", "Jira",  "XAMPP"]
+
+export const codingLanguages = [ "HTML", "JavaScript", "CSS",  "PHP"]
+export const librariesAndFrameworks =  ["Bootstrap", "jQuery", "React"]; 
+export const  additionalSkills = ["MySQL", "API", "Node",  "XAMPP", "Git",  "Figma"]
+export const collaborationTools = ["GitHub", "Trello", "Jira"]
 
