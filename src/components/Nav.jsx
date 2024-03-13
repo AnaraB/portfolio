@@ -1,8 +1,10 @@
-import React from "react"
+import React, {useState} from "react"
 import { NavLink } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 
 function Nav() {
+  const [displayLinks, setDisplayLinks] = useState(false)
+
   return (
     <nav
     className="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -18,11 +20,15 @@ function Nav() {
         aria-controls="navbarNav"
         aria-expanded="false"
         aria-label="Toggle navigation"
+        onClick={()=> {
+          setDisplayLinks(!displayLinks)
+          console.log(displayLinks);
+        }}
       >
         <span className="navbar-toggler-icon"></span>
       </button>
-      <div className="collapse navbar-collapse  justify-content-end" id="navbarNav">
-        <ul className="navbar-nav ml-auto">
+      <div style={{display: displayLinks ? "unset" : "none"}}className="collapse navbar-collapse  justify-content-end" id="navbarNav">
+        <ul className="navbar-nav  js-scroll-trigger">
           <li className="nav-item">
           <NavLink
                 to="/"

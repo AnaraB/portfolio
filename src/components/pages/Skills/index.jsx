@@ -66,6 +66,7 @@ function Skills() {
           </div>
           <div className="row">
             <div className="col-lg-8 mx-auto d-flex justify-content-between socialIcons">
+            {/* <hr className="" /> */}
               <a href={cv} target="_blank" rel="noopener noreferrer">
                 <img src={cvIcon} alt="cv icon" />
               </a>
