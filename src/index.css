@@ -1,58 +1,46 @@
-/* general reset */
+/* general rules */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  color: #fff;
-  font-family: "Poppins", sans-serif;
-}
- 
- ul {
-  list-style: none;
- }
- 
- a {
-  text-decoration: none;
+:root {
+  --header-height: 3.5rem;
+  --first-color:  #e67e22;
+  --title-color: #fff;
+  --text-color: hsl(0, 0%, 75%);
+  --body-color: linear-gradient(
+    to bottom,
+    rgba(88, 88, 195, 0.965),
+    rgba(30, 34, 34, 0.3)),
+  --body-font:"Poppins", sans-serif;
+  --second-font: "Open Sans", sans-serif;
+  --h2-font-size: 1.25rem;
+  --small-font-size: 0.813rem;
+  --font-semi-bold: 600;
+  --z-tooltip: 10;
+  --z-fixed: 100;
  }
 
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+  font-family: var(--body-font);
+}
+ 
+
 p {
-  font-family: "Open Sans", sans-serif;
+  font-family:  var(--second-font);
+
 }
 
 .sectionTitle {
-  font-size: 1.7rem;
+  font-size: var(--h2-font-size);
   font-weight: 500;
   text-transform: uppercase;
-  font-weight: 700;
-}
-/*----------------------------- NAVIGATION BAR------------------------ */
-
-#mainNav {
-  padding: 1rem 5rem 0;
 }
 
-.logo {
-  width: 10rem;
-  padding-left: 1rem;
-}
-#mainNav {
-  font-size: 1.1rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  cursor: pointer;
-  color: white;
-}
-
-.isActive:hover {
-  color: red;
-}
-
-/* -----Mobile navigation ----- */
-
-/* ---------- */
 .contactSection,
 .projectsSection,
 .skillsSection {
@@ -64,10 +52,78 @@ p {
   );
   text-align: center;
   padding-bottom: 8rem;
-  color: #fff;
+  color: var(--title-color)
 }
 
-/* -------------------------Projects----------------------------  */
+/*----------------------------- NAVIGATION BAR------------------------ */
+
+
+
+ .logo {
+  width: 10rem;
+  padding-top: 1rem;
+} 
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: var(--z-fixed);
+ 
+ }
+
+ #mainNav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  align-items: center;
+ 
+  margin: 1rem;
+ }
+
+.nav__toggle,
+.nav__close {
+ font-size: 1.5rem;
+ color: var(--title-color);
+ cursor: pointer;
+ font-size: 2.2rem;
+ padding-right: 1.2rem;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+  list-style: none;
+ }
+ 
+ .nav__link {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+  transition: color 0.4s;
+  text-decoration: none;
+  text-transform: uppercase;
+  
+ }
+ 
+ .nav__link:hover {
+  color: var(--first-color);
+ }
+ 
+ .nav__close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+ }
+ 
+ .show-menu {
+  right: 100;
+
+ }
+
+/* -------------------------Projects Page----------------------------  */
 
 .project-card {
   position: relative;
@@ -122,7 +178,7 @@ p {
   color: #f16926dd;
 }
 
-/* ------------------------Skills section----------------------- */
+/* ------------------------Skills Page----------------------- */
 .skillsSection {
   padding-top: 10rem;
   padding-bottom: 2rem;
@@ -134,7 +190,7 @@ p {
 .skillsSection h3 {
   font-weight: 300;
   font-size: 1.5rem;
-  color: #d3d3d3;
+  color: var(--text-color);
 }
 .listInline {
   display: flex;
@@ -143,14 +199,13 @@ p {
   list-style: none;
   padding: 1.2rem;
   font-size: 1.4rem;
-  color: white;
 }
 
 .socialIcons img {
-  width: 50px;
+  width: 40px;
 }
 
-/* Contact Form */
+/* ----------------------Contact Form Page --------------- */
 .contactSection {
   min-height: 100vh;
 }
@@ -167,7 +222,7 @@ p {
   border-radius: 8px;
   border-style: none;
   box-sizing: border-box;
-  color: #ffffff;
+  color: white;
   cursor: pointer;
   display: inline-block;
   font-size: 18px;
@@ -188,9 +243,9 @@ p {
   touch-action: manipulation;
 }
 
-.button-1:hover,
-.button-1:focus {
-  background-color: #f00962;
+.btn-contact-me:hover,
+.btn-contact-me:focus {
+ transition: right 0.4s;
 }
 
 /* -----Media query------ */
@@ -204,6 +259,39 @@ p {
     margin: 1.2rem 2rem;
   }
 }
+/* -------------------responsive navbar------------------ */
+/* below 1150px */
+@media screen and (max-width: 1150px) {
+
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: hsla(0, 0%, 6%, 0.2);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    min-width: 30vw;
+    min-height: 3vh;
+    padding: 6rem 3rem 0;
+    transition: right 0.4s;
+  }
+ }
+
+  @media screen and (min-width: 1150px) {
+  .nav {
+     height: calc(var(--header-height) + 1rem); 
+  }
+  .nav__toggle,
+  .nav__close {
+    display: none;
+  }
+ 
+  .nav__list {
+    flex-direction: row;
+    column-gap: 2.5rem;
+  }
+} 
+/* ---------------------------------------------------------- */
 /* Below 1200px */
 @media  only screen and (max-width: 75em) {
   .navbar-brand {
@@ -212,18 +300,14 @@ p {
   .sectionTitle {
     font-size: 1.5rem;
   }
-  #mainNav {
-    margin: 1.2rem 2rem;
-  }
+
 }
 /* Below 990px (Tablets)*/
 @media only screen and (max-width: 62em) {
-  #mainNav {
-    margin: 1rem 3.7rem;
-  }
-  .navbar-brand {
+
+  /* .navbar-brand {
     padding-left: 0;
-  }
+  } */
   .listInline {
     font-size: 1.2rem;
   }

@@ -35,7 +35,7 @@ function Contact() {
             <div className="col-md-8">
               <h2 className="sectionTitle">Contact Form</h2>
               <form id="contact-form" onSubmit={handleSubmit(handleRegistration, handleError)} className="">
-                <div class="col-auto my-3">
+                <div className="col-auto my-3">
                   <input
                     className="form-control"
                     placeholder="Name"
@@ -47,7 +47,7 @@ function Contact() {
                     {errors?.name && errors.name.message}
                   </small>
                 </div>
-                <div class="col-auto my-3">
+                <div className="col-auto my-3">
                   <input
                     className="form-control"
                     placeholder="Email"
@@ -59,7 +59,7 @@ function Contact() {
                     {errors?.email&& errors.email.message}
                   </small>
                 </div>
-                <div class="col-auto my-3">
+                <div className="col-auto my-3">
              
                   <textarea
                     className="form-control"
