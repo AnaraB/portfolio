@@ -8,13 +8,10 @@
     ),
     url("../../../assets/images/bg-mountains.jpg");
   background-position: center;
-  /* -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover; */
   background-size: cover;
   object-fit: cover;
   height: 100vh;
-  min-width: 100vh;
+  min-width: 100vw;
   color: #fff;
 }
 
@@ -24,7 +21,6 @@
 
 #heroSection h3 {
   font-size: 1.9rem;
-  /* font-weight: 300; */
   margin-bottom: 9rem;
 }
 #heroSection p {
@@ -33,6 +29,7 @@
   line-height: 1.7;
   font-family: "Open Sans", sans-serif;
 }
+
 
 /* About me */
 
@@ -60,4 +57,29 @@
   display: inline-block;
   padding: 0.4rem 1rem;
   border-radius: 0.8rem;
+}
+
+
+/* -----Mobile responsive---- */
+/* Below 473px (Tablets)*/
+/* 320px — 480px */
+@media (min-width: 20em) and (max-width: 30em) {
+#heroSection h3{
+  font-size: 1.5rem;
+}
+#heroSection p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.4;
+  padding: 0 0.2rem;
+}
+.circle-img {
+  height: 5rem;
+  width: 5rem;
+}
+
+.orangeBtn:link,
+.orangeBtn:visited {
+  font-size: 0.6rem;
+}
 }

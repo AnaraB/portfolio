@@ -1,40 +1,40 @@
-import React, {useState} from "react"
-import { NavLink } from "react-router-dom";
+import React from "react";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 
 function Nav() {
-  const [displayLinks, setDisplayLinks] = useState(false)
 
   return (
     <nav
-    className="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div className="container-fluid">
-     <div>
-      <img src={logo} className="logo" alt="logo image" />
-     </div>
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-        onClick={()=> {
-          setDisplayLinks(!displayLinks)
-          console.log(displayLinks);
-        }}
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div style={{display: displayLinks ? "unset" : "none"}}className="collapse navbar-collapse  justify-content-end" id="navbarNav">
-        <ul className="navbar-nav  js-scroll-trigger">
-          <li className="nav-item">
-          <NavLink
+      className="navbar navbar-expand-lg  navbar-light fixed-top"
+      id="mainNav"
+    >
+      <div className="container-fluid">
+        <Link to="/" className="navbar-brand">
+          <img src={logo} className="logo" alt="logo image" />
+        </Link>
+        <button
+          className="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div
+          className="collapse navbar-collapse  justify-content-end"
+          id="navbarNav"
+        >
+          <ul className="navbar-nav main-nav-list mb-2 mb-lg-0">
+            <li className="nav-item">
+              <NavLink
                 to="/"
                 end
                 className={({ isActive }) =>
-                  isActive ? 'nav-link active' : 'nav-link'
+                  isActive ? "nav-link active" : "nav-link"
                 }
               >
                 About
@@ -44,7 +44,7 @@ function Nav() {
               <NavLink
                 to="/projects"
                 className={({ isActive }) =>
-                  isActive ? 'nav-link active' : 'nav-link'
+                  isActive ? "nav-link active" : "nav-link"
                 }
               >
                 Projects
@@ -54,28 +54,27 @@ function Nav() {
               <NavLink
                 to="/skills"
                 className={({ isActive }) =>
-                  isActive ? 'nav-link active' : 'nav-link'
+                  isActive ? "nav-link active" : "nav-link"
                 }
               >
                 Skills
               </NavLink>
-          </li>
-          <li className="nav-item">
+            </li>
+            <li className="nav-item">
               <NavLink
                 to="/contact"
                 className={({ isActive }) =>
-                  isActive ? 'nav-link active' : 'nav-link'
+                  isActive ? "nav-link active" : "nav-link"
                 }
               >
                 Contact
               </NavLink>
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-
-  )
+    </nav>
+  );
 }
 
-export default Nav
+export default Nav;

@@ -5,23 +5,30 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   color: #fff;
   font-family: "Poppins", sans-serif;
 }
+ 
+ ul {
+  list-style: none;
+ }
+ 
+ a {
+  text-decoration: none;
+ }
 
-p{
+p {
   font-family: "Open Sans", sans-serif;
 }
 
 .sectionTitle {
-  color:#fff;
   font-size: 1.7rem;
   font-weight: 500;
   text-transform: uppercase;
   font-weight: 700;
 }
-/* NAVIGATION BAR */
+/*----------------------------- NAVIGATION BAR------------------------ */
 
 #mainNav {
   padding: 1rem 5rem 0;
@@ -39,10 +46,15 @@ p{
   color: white;
 }
 
+.isActive:hover {
+  color: red;
+}
+
 /* -----Mobile navigation ----- */
+
 /* ---------- */
 .contactSection,
-.projectsSection, 
+.projectsSection,
 .skillsSection {
   padding-top: 10rem;
   background-image: linear-gradient(
@@ -55,7 +67,7 @@ p{
   color: #fff;
 }
 
-/* Projects  */
+/* -------------------------Projects----------------------------  */
 
 .project-card {
   position: relative;
@@ -88,7 +100,7 @@ p{
   text-transform: uppercase;
 }
 
-.project-description-tools{
+.project-description-tools {
   color: black;
 }
 .project-card:hover .project-card-caption {
@@ -110,54 +122,44 @@ p{
   color: #f16926dd;
 }
 
-
-/* Skills section */
-.skillsSection{
-  padding-top: 8rem;
-  
+/* ------------------------Skills section----------------------- */
+.skillsSection {
+  padding-top: 10rem;
   padding-bottom: 2rem;
-
 }
-.skillsSection p{
+.skillsSection p {
   line-height: 1.8;
-  font-size: 1.2rem;;
+  font-size: 1.2rem;
 }
-.skillsSection h3{
+.skillsSection h3 {
   font-weight: 300;
   font-size: 1.5rem;
-  color: #D3D3D3
+  color: #d3d3d3;
 }
-.listInlne {
+.listInline {
   display: flex;
   flex-direction: row;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   list-style: none;
   padding: 1.2rem;
   font-size: 1.4rem;
   color: white;
 }
 
-.socialIcons img{
-width: 50px;
+.socialIcons img {
+  width: 50px;
 }
 
-
 /* Contact Form */
-.contactSection{
+.contactSection {
   min-height: 100vh;
-
 }
 
 #contact-form {
-  padding: 4rem 1rem;
+  padding: 1rem;
   font-size: 1.5rem;
-  line-height: 1.125rem;
   color: #495057;
   font-weight: 500;
-  width: 50rem;
-  padding: 0.7rem;
-  margin-left: 9rem;
-
 }
 
 .btn-contact-me {
@@ -165,7 +167,7 @@ width: 50px;
   border-radius: 8px;
   border-style: none;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
   font-size: 18px;
@@ -189,4 +191,89 @@ width: 50px;
 .button-1:hover,
 .button-1:focus {
   background-color: #f00962;
+}
+
+/* -----Media query------ */
+/* Below 1400px */
+@media  only screen and (max-width: 87.5em) {
+  .contactSection {
+    max-width: 120rem;
+  }
+
+  #mainNav {
+    margin: 1.2rem 2rem;
+  }
+}
+/* Below 1200px */
+@media  only screen and (max-width: 75em) {
+  .navbar-brand {
+    padding-left: 1rem;
+  }
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+  #mainNav {
+    margin: 1.2rem 2rem;
+  }
+}
+/* Below 990px (Tablets)*/
+@media only screen and (max-width: 62em) {
+  #mainNav {
+    margin: 1rem 3.7rem;
+  }
+  .navbar-brand {
+    padding-left: 0;
+  }
+  .listInline {
+    font-size: 1.2rem;
+  }
+
+  .skillsSection p{
+    font-size: 0.8rem;
+    padding: 0 0.4rem;
+  }
+  .socialIcons img{
+    width: 15%;
+  }
+ 
+
+
+ 
+}
+/* Below 473px (Tablets)*/
+/* 320px — 480px */
+@media (min-width: 20em) and (max-width: 30em) {
+  .logo{
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+  .sectionTitle {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+
+  .skill-items{
+    font-size: 1rem;
+  
+  }
+  .skillsSection p{
+    font-size: 0.8rem;
+    padding: 0 0.4rem;
+  }
+
+  .skillsSection h3{
+    font-size: 0.9rem;
+    margin: 0 auto;
+  }
+  .listInline {
+    font-size: 1rem;
+    padding: 0.8rem;
+    margin-bottom: 0;
+  }
+  .socialIcons img{
+    width: 15%;
+  }
+ 
+
 }
