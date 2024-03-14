@@ -6,7 +6,7 @@ import About from './components/pages/About'
 import Projects from './components/pages/Projects'
 import Skills from './components/pages/Skills'
 import Contact from './components/pages/Contact';
-import Nav from './components/Nav';
+import Navbar from './components/Navbar';
 
 
 
@@ -16,7 +16,7 @@ function App() {
 return (
 <Router>
     <div>
-      <Nav />
+      <Navbar />
         <Routes>
           <Route path="/" element={<About/>} />
           <Route path="/about" element={<About/>} />

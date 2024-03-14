@@ -31,14 +31,13 @@ function Contact() {
     <Container>
       <section className="contactSection">
         <div className="container">
-          <div className="row">
-            <div className="col-lg-10 mx-auto mb-4">
+          <div className="row justify-content-center">
+            <div className="col-md-8">
               <h2 className="sectionTitle">Contact Form</h2>
               <form id="contact-form" onSubmit={handleSubmit(handleRegistration, handleError)} className="">
-                <div>
-              
+                <div className="col-auto my-3">
                   <input
-                    className="form-control my-4"
+                    className="form-control"
                     placeholder="Name"
                     type="text"
                     name="name"
@@ -48,9 +47,9 @@ function Contact() {
                     {errors?.name && errors.name.message}
                   </small>
                 </div>
-                <div>
+                <div className="col-auto my-3">
                   <input
-                    className="form-control my-4"
+                    className="form-control"
                     placeholder="Email"
                     type="email"
                     name="email"
@@ -60,10 +59,10 @@ function Contact() {
                     {errors?.email&& errors.email.message}
                   </small>
                 </div>
-                <div>
+                <div className="col-auto my-3">
              
                   <textarea
-                    className="form-control my-4"
+                    className="form-control"
                     placeholder="Message"
                     type="text"
                     name="message" 

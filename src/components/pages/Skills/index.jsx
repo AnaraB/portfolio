@@ -55,13 +55,13 @@ function Skills() {
                 Here is the list of my milestones. Download my CV for more information. 
               </p>
               <h3>Coding Languages</h3>
-              <ul className="listInlne">{codingLanguagesList}</ul>
+              <ul className="listInline">{codingLanguagesList}</ul>
               <h3>Libraries and Frameworks</h3>
-              <ul className="listInlne">{libAndFrameList}</ul>
+              <ul className="listInline">{libAndFrameList}</ul>
               <h3>Collaboration Tools</h3>
-              <ul className="listInlne">{collabTools}</ul>
+              <ul className="listInline">{collabTools}</ul>
               <h3>Additional Tools</h3>
-              <ul className="listInlne">{otherProficiencies}</ul>
+              <ul className="listInline">{otherProficiencies}</ul>
             </div>
           </div>
           <div className="row">
