@@ -153,7 +153,7 @@ p {
   top: 30%;
   width: 100%;
   text-align: center;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -258,7 +258,7 @@ p {
 }
 
  .info h4 {
-  font-size: 22px;
+  font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 5px;
   color: white
@@ -266,7 +266,7 @@ p {
 
 .info p {
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 1rem;
   color: #f2f5f7;
 }
 
@@ -332,6 +332,22 @@ p {
 }
 /* Below 990px (Tablets)*/
 @media only screen and (max-width: 62em) {
+  .project-card-caption-content {
+    top: 30%;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  
+  .project-card-caption-content i.fab {
+    font-size: 1.5rem;
+  
+  }
+  .project-card-caption-content i.fas {
+    padding-top: 0.2rem;
+    font-size: 1.1rem;
+  
+  }
   .listInline {
     font-size: 1.2rem;
   }
@@ -367,6 +383,23 @@ p {
     margin-left: 2rem;
   }
 
+  .project-card-caption-content {
+    top: 30%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .project-card-caption-content i.fab {
+    font-size: 2rem;
+  
+  }
+  .project-card-caption-content i.fas {
+    padding-top: 0.5rem;
+    font-size: 1.8rem;
+  
+  }
+
 }
 /* Below 473px (Tablets)*/
 /* 320px — 480px */
@@ -394,6 +427,23 @@ p {
   .sectionTitle {
     font-size: 1.2rem;
     margin-bottom: 0;
+  }
+
+  .project-card-caption-content {
+    top: 20%;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  
+  .project-card-caption-content i.fab {
+    font-size: 1.5rem;
+  
+  }
+  .project-card-caption-content i.fas {
+    padding-top: 0.2rem;
+    font-size: 1.1rem;
+  
   }
 
   .skill-items{

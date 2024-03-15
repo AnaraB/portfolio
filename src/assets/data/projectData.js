@@ -21,7 +21,7 @@ export default [
   {
     id: "1",
     title: "Team_profile_generator",
-    description: "JS / Inquirer / OOP / Jest / ootstrap",
+    description: "JS / Inquirer / OOP / Jest / Bootstrap",
     deployedUrl: "https://anarab.github.io/MyRun/",
     githubUrl: "https://github.com/AnaraB/OOP_team_profile_generator",
     image: teamGenerator,

@@ -93,22 +93,18 @@ function Contact() {
             <div className="col-md-6">
               <div className="info">
                 <div className="address">
-               {/* <img className="infoIcons" src={locationIcon} alt="location icon" /> */}
-                  {/* <i className="bi bi-geo-alt"></i> */}
                   <h4>Location:</h4>
                   <p>Bexley, Greater London</p>
                 </div>
 
                 <div className="email">
-                  <i class="bi bi-envelope-fill"></i>
                   <h4>Email:</h4>
                   <p>berdali.aygerim9@gmail.com</p>
                 </div>
 
                 <div className="phone">
-                  <i className="bi bi-phone"></i>
                   <h4>Call:</h4>
-                  <p>+1 5589 55488 55s</p>
+                  <p>+44744625640</p>
                 </div>
               </div>
             </div>
