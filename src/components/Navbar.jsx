@@ -4,9 +4,11 @@ import { IoClose, IoMenu } from "react-icons/io5";
 import logo from "../assets/images/logo.png";
 
 function Navbar() {
+  //create state
   const [showMenu, setShowMenu] = useState(false);
   const [width, setWidth] = useState(window.innerWidth);
-
+ 
+  //manage the mobile navigation based on screen width, we use useEffect to track this change
   useEffect(() => {
     if (window.innerWidth >= 1150) {
       setShowMenu(true);
@@ -33,7 +35,7 @@ function Navbar() {
 
   return (
     <header className="header">
-      <nav className="container #mainNav">
+      <nav className="container" id="mainNav">
         <Link to="/" className="navbar-brand">
           <img src={logo} className="logo" alt="logo image" />
         </Link>
