@@ -9,7 +9,7 @@
   --header-height: 3.5rem;
   --first-color:  #e67e22;
   --title-color: #fff;
-  --text-color: hsl(0, 0%, 75%);
+  --text-color: hsl(0, 0%, 73%);
   --body-color: linear-gradient(
     to bottom,
     rgba(88, 88, 195, 0.965),
@@ -186,12 +186,15 @@ p {
   padding-bottom: 2rem;
 }
 .skillsSection p {
-  line-height: 1.8;
+  padding: 1rem 0.7rem 0 0.7rem;
+  line-height: 1.4;
   font-size: 1.2rem;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
 }
 .skillsSection h3 {
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--text-color);
 }
 .listInline {

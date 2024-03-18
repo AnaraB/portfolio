@@ -40,22 +40,18 @@ function Skills() {
         <div className="container">
           <div className="row">
             <div className="col-lg-10 mx-auto mb-4">
-              <h2 className="sectionTitle mb-3">Skills</h2>
+              <h2 className="sectionTitle mb-2">Skills</h2>
               <p>
                 Following a couple of coding tutorials, I was hooked and
                 enrolled in the Full Stack Developer program at IT Career
-                Switch, where I developed two full-stack projects: Gazetteer and
-                Company Directory. I'm all about learning and trying new things.{" "}
-                <br /> Considering, as Napoleon Hill once said: <br />
-                <em>
-                  "Your only limitation is the one you set up in your mind"
-                </em>
-                <br />I am leveraging my past experiences in customer service,
-                finance, childcare, entrepreneurship, and sales - which equip me
-                with a plethora of skills to contribute to web development,
+                Switch, where I created two full-stack projects: Gazetteer and
+                Company Directory. <br />  I love learning and trying new things. I am
+                leveraging my past experiences in customer service, finance,
+                childcare, entrepreneurship, and sales - which equip me with a
+                plethora of skills to contribute to web development,
                 particularly on the front-end side. Upon successfully completing
                 the Front-End Web Development Bootcamp on edX Boot Camp, I'm
-                excited to share my journey. Please refer to the list of
+                excited to share my journey. <br /> Please refer to the list of
                 milestones provided below and feel free to download my CV for
                 comprehensive information.
               </p>
