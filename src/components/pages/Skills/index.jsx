@@ -42,17 +42,22 @@ function Skills() {
             <div className="col-lg-10 mx-auto mb-4">
               <h2 className="sectionTitle mb-3">Skills</h2>
               <p>
-                I started off in customer service, but then I got into the
-                Junior Full Stack Developer program at IT Career Switch. Right
-                now, I'm digging deeper into coding with Skills Bootcamp's
-                Front-End Web Development course on edX Boot Camp. I've done a
-                bit of everything - finance, childcare, entrepreneurship, and
-                sales - which gives me a bunch of skills to bring to the table
-                in web development, especially on the front-end side. I'm all
-                about learning and trying new things, so I'm pumped to jump into
-                the constantly changing world of web development and put my mix
-                of skills to good use! <br />
-                Here is the list of my milestones. Download my CV for more information. 
+                Following a couple of coding tutorials, I was hooked and
+                enrolled in the Full Stack Developer program at IT Career
+                Switch, where I developed two full-stack projects: Gazetteer and
+                Company Directory. I'm all about learning and trying new things.{" "}
+                <br /> Considering, as Napoleon Hill once said: <br />
+                <em>
+                  "Your only limitation is the one you set up in your mind"
+                </em>
+                <br />I am leveraging my past experiences in customer service,
+                finance, childcare, entrepreneurship, and sales - which equip me
+                with a plethora of skills to contribute to web development,
+                particularly on the front-end side. Upon successfully completing
+                the Front-End Web Development Bootcamp on edX Boot Camp, I'm
+                excited to share my journey. Please refer to the list of
+                milestones provided below and feel free to download my CV for
+                comprehensive information.
               </p>
               <h3>Coding Languages</h3>
               <ul className="listInline">{codingLanguagesList}</ul>
@@ -66,7 +71,7 @@ function Skills() {
           </div>
           <div className="row">
             <div className="col-lg-8 mx-auto d-flex justify-content-between socialIcons">
-            {/* <hr className="" /> */}
+              {/* <hr className="" /> */}
               <a href={cv} target="_blank" rel="noopener noreferrer">
                 <img src={cvIcon} alt="cv icon" />
               </a>

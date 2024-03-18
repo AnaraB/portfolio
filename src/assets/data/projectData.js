@@ -31,7 +31,7 @@ export default [
     title: "Weather-dashboard",
     description:"JS / jQuery / API / Bootstrap",
     deployedUrl: "https://anarab.github.io/weather-dashboard/",
-    githubRepo: "https://github.com/AnaraB/weather-dashboard",
+    githubUrl: "https://github.com/AnaraB/weather-dashboard",
     image: weatherDashboard,
   },
   {
@@ -39,7 +39,7 @@ export default [
     title: "Gazetteer",
     description: "JS / APIs / JQuery / CSS / AJAX / PHP",
     deployedUrl: "https://gazetteer.anara-berdalieva.co.uk/",
-    githubRepo: "https://github.com/AnaraB/gazetteer",
+    githubUrl: "https://github.com/AnaraB/gazetteer",
     image: gazetteer,
    
   },
@@ -83,7 +83,7 @@ export default [
     title: "Work day planner",
     description: "HTML / JS / jQuery / Bootstrap",
     deployedUrl: "https://anarab.github.io/Work-day-scheduler/",
-    githubRepo: "https://github.com/AnaraB/Work-day-scheduler",
+    githubUrl: "https://github.com/AnaraB/Work-day-scheduler",
     image: workDayScheduler,
     
   }
@@ -92,7 +92,7 @@ export default [
 
 
 export const codingLanguages = [ "HTML", "JavaScript", "CSS",  "PHP"]
-export const librariesAndFrameworks =  ["Bootstrap", "jQuery", "React"]; 
+export const librariesAndFrameworks =  ["Bootstrap", "Material UI", "jQuery", "React"]; 
 export const  additionalSkills = ["MySQL", "API", "Node",  "XAMPP", "Git",  "Figma"]
 export const collaborationTools = ["GitHub", "Trello", "Jira"]
 

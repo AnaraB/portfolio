@@ -6,15 +6,15 @@ function Contact() {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm({ mode: "onChange" });
 
   const handleRegistration = (formData) => {
-    console.log("Form submitted");
-    console.log(formData);
     const {name, email, message} = formData;
     const mailTo = `mailto:berdali.aygerim9@gmail.com?subject=contact form submission from ${name}&body=${message}. This email from: ${email}`
     window.location.href = mailTo;
+    reset();
 
   };
 
