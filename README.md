@@ -4,7 +4,7 @@ A portfolio site using React Single Page Application.
 
 ### Github : https://github.com/AnaraB/portfolio
 
-### Deployed site : https://portfolio.anara-berdalieva.co.uk/
+### Deployed site : https://anara-berdalieva.co.uk/
 
 ## Description
 
