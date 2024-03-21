@@ -174,10 +174,21 @@ p {
   font-size: 2.2rem;
   color: #f16926dd;
 }
+
+.project-card-caption-content i.fab:hover {
+  font-size: 2.2rem;
+  color: #0417eef6;
+}
 .project-card-caption-content i.fas {
   padding-top: 0.8rem;
   font-size: 1.8rem;
   color: #f16926dd;
+}
+
+.project-card-caption-content i.fas:hover {
+  padding-top: 0.8rem;
+  font-size: 1.8rem;
+  color: #0417eef6;
 }
 
 /* ------------------------Skills Page----------------------- */

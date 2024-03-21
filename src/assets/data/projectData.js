@@ -29,7 +29,7 @@ export default [
   {
     id: "2",
     title: "Weather-dashboard",
-    description:"JS / jQuery / API / Bootstrap",
+    description:"JS / jQuery / APIs / Bootstrap",
     deployedUrl: "https://anarab.github.io/weather-dashboard/",
     githubUrl: "https://github.com/AnaraB/weather-dashboard",
     image: weatherDashboard,
@@ -93,6 +93,6 @@ export default [
 
 export const codingLanguages = [ "HTML", "JavaScript", "CSS",  "PHP"]
 export const librariesAndFrameworks =  ["Bootstrap", "Material UI", "jQuery", "React"]; 
-export const  additionalSkills = ["MySQL", "API", "Node",  "XAMPP", "Git",  "Figma"]
+export const  additionalSkills = ["MySQL", "Node",  "XAMPP", "Git",  "Figma"]
 export const collaborationTools = ["GitHub", "Trello", "Jira"]
 

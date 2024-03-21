@@ -52,8 +52,8 @@ function Skills() {
                 particularly on the front-end side. Upon successfully completing
                 the Front-End Web Development Bootcamp on edX Boot Camp, I'm
                 excited to share my journey. <br /> Please refer to the list of
-                milestones provided below and feel free to download my CV for
-                comprehensive information.
+                my Tech Skills provided below and feel free to download my CV for
+                more information.
               </p>
               <h3>Coding Languages</h3>
               <ul className="listInline">{codingLanguagesList}</ul>
