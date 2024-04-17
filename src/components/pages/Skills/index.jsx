@@ -5,6 +5,7 @@ import {
   librariesAndFrameworks,
   additionalSkills,
   collaborationTools,
+  designSkills
 } from "../../../assets/data/projectData";
 import cv from "../../../assets/images/cv.pdf";
 import cvIcon from "../../../assets/images/icons/cv.png";
@@ -29,6 +30,11 @@ function Skills() {
     </li>
   ));
   const collabTools = collaborationTools.map((skill) => (
+    <li className="skill-items" key={uuid()}>
+      {skill}
+    </li>
+  ));
+  const design = designSkills.map((skill) => (
     <li className="skill-items" key={uuid()}>
       {skill}
     </li>
@@ -63,6 +69,8 @@ function Skills() {
               <ul className="listInline">{collabTools}</ul>
               <h3>Additional Tools</h3>
               <ul className="listInline">{otherProficiencies}</ul>
+              <h3>Design skills</h3>
+              <ul className="listInline">{design}</ul>
             </div>
           </div>
           <div className="row">

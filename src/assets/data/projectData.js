@@ -92,7 +92,8 @@ export default [
 
 
 export const codingLanguages = [ "HTML", "JavaScript", "CSS",  "PHP"]
-export const librariesAndFrameworks =  ["Bootstrap", "Material UI", "jQuery", "React"]; 
-export const  additionalSkills = ["MySQL", "Node",  "XAMPP", "Git",  "Figma"]
+export const librariesAndFrameworks =  ["Bootstrap", "Material UI", "jQuery", "React", "Angular"]; 
+export const  additionalSkills = ["MySQL", "Node",  "XAMPP", "Git"]
 export const collaborationTools = ["GitHub", "Trello", "Jira"]
+export const designSkills = ["UX/UI design", "Figma"]
 
