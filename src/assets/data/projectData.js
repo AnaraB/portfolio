@@ -8,7 +8,7 @@ import workDayScheduler from "../images/portfolio-img/work-day-scheduler-demo.gi
 import passwordGenerator from "../images/portfolio-img/password-generator-demo.png"
 import anarkaGB from "../images/portfolio-img/anarkaGB.png";
 import githubFinder from "../images/portfolio-img/github_finder.jpeg";
-import notes from "../images/portfolio-img/notes-demo.png";
+
 
 
 export default [
@@ -45,15 +45,6 @@ export default [
     image: gazetteer,
   },
   {
-    id: "4",
-    title: "Notes",
-    description: "React / Material UI / Vite",
-    deployedUrl: "https://gregarious-kringle-3302e3.netlify.app/",
-    githubUrl: "https://github.com/AnaraB/Notes",
-    image: notes,
-    
-  },
-  {
     id: "5",
     title: "Company Directory",
     description: "JS / Bootstrap / PHP / SQL",
@@ -82,7 +73,7 @@ export default [
   {
     id: "8",
     title: "Work day planner",
-    description: "HTML / JS / jQuery / Bootstrap",
+    description: "JS / jQuery / Bootstrap",
     deployedUrl: "https://anarab.github.io/Work-day-scheduler/",
     githubUrl: "https://github.com/AnaraB/Work-day-scheduler",
     image: workDayScheduler,
