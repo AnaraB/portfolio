@@ -147,6 +147,11 @@ p {
   -moz-transition: all 0.2s;
   transition: all 0.2s;
 }
+.project-card-icons {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 1.1rem;
+}
 
 .project-card-caption-content {
   position: absolute;
